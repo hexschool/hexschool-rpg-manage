@@ -1,0 +1,1 @@
+function m(i){const o=new Date(i).getTime()/1e3;let t=Math.round(new Date/1e3)-o;const r=t>0?"\u524D":"\u5F8C";t=Math.abs(t);const s=["\u5E74","\u500B\u6708","\u661F\u671F","\u5929","\u5C0F\u6642","\u5206\u9418","\u79D2"],a=[31536e3,2592e3,604800,86400,3600,60,1];for(let e=0;e<7;e+=1){const n=Math.floor(t/a[e]);if(n!==0)return`${n} ${s[e]}${r}`}return"error"}export{m as g};
